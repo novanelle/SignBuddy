@@ -1,0 +1,81 @@
+body {
+    background-color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    min-height: 100vh;
+    padding: 200px;
+    background-color: #ddd1e6; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.brand-title {
+    font-size: 80px; 
+    font-family: "Dela Gothic One", sans-serif; 
+    text-shadow: 
+        2px 2px 0px black,  
+        -2px -2px 0px black, 
+        2px -2px 0px black,  
+        -2px 2px 0px black;  
+    font-weight: bold;
+    color: #CFADE8; 
+    margin-bottom: 15px; 
+}
+
+ .form-label {
+    font-size: 14px;
+    font-family: ;
+    color: #333333; 
+    text-align: left;
+    display: block;
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1px solid #cccccc; 
+    border-radius: 8px;
+    margin-bottom: 15px; 
+}
+
+.form-control:focus {
+    border-color: #6c63ff; 
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); 
+}
+
+.btn-primary {
+    background-color: #CFADE8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #574ecf; 
+}
+
+.form-text {
+    font-size: 14px;
+    color: #666666; 
+    margin-top: 10px;
+}
+
+.form-text a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-text a:hover {
+    text-decoration: underline;
+}
