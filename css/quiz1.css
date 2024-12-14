@@ -1,0 +1,106 @@
+/* Quiz Cards Container */
+.quiz-card {
+    border-radius: 15px;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Circle on the left with percentage */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #aca7ff;
+    margin-right: 15px;
+    border: 1px solid black;
+}
+
+.percentage-circle {
+    color: black;
+    font-size: 1rem; /* Increased size for better readability */
+    font-weight: bold;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* Card Text */
+.card-body {
+
+    font-family: "Inter Tight", sans-serif;
+    display: flex;
+    justify-content: space-between; /* Ensures title and icon are spaced apart */
+    align-items: center;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.25rem; /* Adjusted for better responsiveness */
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-body i {
+    font-size: 1.5rem; 
+    color: red; 
+    margin-left: 15px;
+}
+
+/* Header styling */
+h3.text-primary {
+    font-family: "Dela Gothic One", sans-serif;
+    color: black !important;
+}
+
+.navbar-brand {
+    font-family: "Dela Gothic One", sans-serif;
+    color: #6c63ff;
+    font-size: 2.5rem; /* Adjusted font size for better visual balance */
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
+}
+
+.nav-item {
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: "Inter Tight", sans-serif;
+}
+
+body {
+    background-color: #ddd1e6;
+}
+
+/* Footer styles */
+.footer .nav-link {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    font-family: "Inter Tight", sans-serif;
+}
+.search-bar {
+    position: relative;
+    text-align: left;
+   
+}
+
+.form-control.search-bar{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #000000;  
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Inter Tight", sans-serif; 
+    background-color: #ffffff; 
+    color: #333;
+}
