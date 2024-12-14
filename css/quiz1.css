@@ -1,4 +1,4 @@
-/* Quiz Cards Container */
+/* Hover effect for quiz card */
 .quiz-card {
     border-radius: 15px;
     display: flex;
@@ -9,6 +9,13 @@
     align-items: center;
     border: 1px solid black;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* On hover, scale the card */
+.quiz-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Circle on the left with percentage */
@@ -33,7 +40,6 @@
 
 /* Card Text */
 .card-body {
-
     font-family: "Inter Tight", sans-serif;
     display: flex;
     justify-content: space-between; /* Ensures title and icon are spaced apart */
@@ -48,9 +54,10 @@
     margin-bottom: 0;
 }
 
+/* Add transitions for smooth hover effect on card */
 .card-body i {
-    font-size: 1.5rem; 
-    color: red; 
+    font-size: 1.5rem;
+    color: red;
     margin-left: 15px;
 }
 
@@ -87,20 +94,20 @@ body {
     font-size: 0.8rem;
     font-family: "Inter Tight", sans-serif;
 }
+
 .search-bar {
     position: relative;
     text-align: left;
-   
 }
 
-.form-control.search-bar{
+.form-control.search-bar {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 25px;
-    border: 2px solid #000000;  
+    border: 2px solid #000000;
     width: 100%;
     margin-top: 10px;
-    font-family: "Inter Tight", sans-serif; 
-    background-color: #ffffff; 
+    font-family: "Inter Tight", sans-serif;
+    background-color: #ffffff;
     color: #333;
 }
