@@ -8,10 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/quiz2.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SignBuddy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home_page.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Quiz Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="quiz-container">
         <div class="quiz-title">The Alphabet Quiz</div>
+        <div class="image-container">
+            <img src="pictures/tasl.jpg" alt="Letter Image">
+            <div class="image-label">2/26</div>
+        </div>
         <div class="question">What letter is this?</div>
         <div class="options">
             <button class="option-btn">W</button>
@@ -20,6 +46,7 @@
         </div>
         <div class="navigation">
             <button class="nav-btn">Back</button>
+            <button class="shuffle-btn">&#x21bb;</button> <!-- Shuffle Icon -->
             <button class="nav-btn">Next</button>
         </div>
     </div>
