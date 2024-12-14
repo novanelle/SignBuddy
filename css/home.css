@@ -10,9 +10,9 @@
     font-family: "Dela Gothic One", sans-serif;
 }
 
-.header h3 {
-    font-size: 3rem; /* Larger font size for the header text */
-    color: #ffffff; /* White text color */
+.header h2 {
+    font-size: 2rem; /* Larger font size for the header text */
+    color: #b441d1; /* White text color */
 }
 
 /* Footer */
@@ -47,6 +47,7 @@
     margin-top: 10px;
     font-size: 0.9rem;
     color: #adb5bd; /* Lighter text color for the copyright */
+    font-family: "Inter Tight", sans-serif; 
 }
 
 /* Video Cards */
@@ -69,11 +70,13 @@
 .video-card .card-title {
     font-size: 1.2rem;
     font-weight: bold;
+    font-family: "Inter Tight", sans-serif;
 }
 
 .video-card .card-text {
     font-size: 1rem;
     color: #555;
+    font-family: "Inter Tight", sans-serif; 
 }
 
 /* Search Bar */
@@ -84,9 +87,10 @@
     border: 1px solid #ddd;
     width: 100%;
     margin-top: 10px;
+    font-family: "Inter Tight", sans-serif; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .header h3 {
         font-size: 2rem; /* Adjust header font size for smaller screens */
@@ -99,10 +103,21 @@
 
     .footer-text {
         font-size: 0.8rem; /* Adjust footer text size */
+        font-family: "Inter Tight", sans-serif; 
     }
 
     .search-bar input {
         font-size: 1rem; /* Adjust input font size */
         padding: 12px;
     }
-}
+    body {
+        font-family: "Inter Tight", sans-serif; 
+    }
+
+    h3 {
+        font-family: "Inter Tight", sans-serif;
+    }
+    .text-center.text-primary {
+        font-family: "Inter Tight", sans-serif;
+    }
+    
