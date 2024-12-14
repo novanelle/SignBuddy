@@ -8,90 +8,154 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Added Bootstrap Icons -->
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
-<div class="header">
-    <h2>Hi there!</h2>
-</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">SignBuddy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link"  href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz1.html">Quiz Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- Search Bar Below Navbar -->
 <div class="container mt-4">
-    <!-- Search Bar -->
     <div class="row justify-content-center search-bar">
         <div class="col-md-6">
             <input type="text" class="form-control" placeholder="What are you looking for..?">
         </div>
     </div>
+</div>
 
-    <!-- Recommended Videos -->
-    <h3 class="text-center text-primary">Recommended</h3>
-    <div class="row mt-3">
-        <div class="col-md-4 mb-3">
-            <div class="card video-card">
-                <div class="card-body">
-                    <h5 class="card-title">Learn Basic ASL Signs</h5>
-                    <p class="card-text">By Sandy Jackson</p>
+<!-- Recommended Videos Section -->
+<h3 class="text-left text-primary mt-4">Recommended</h3>
+<div class="row mt-3">
+    <div class="col-md-4 mb-3">
+        <div class="card video-card">
+            <div class="video-thumbnail">
+                <img src="pictures/basicpics.jpg" class="card-img-top" alt="Learn Basic ASL Signs">
+                <div class="play-button">
+                    <i class="bi bi-play-circle"></i> <!-- Play button icon -->
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card video-card">
-                <div class="card-body">
-                    <h5 class="card-title">Colours</h5>
-                    <p class="card-text">By Erling Haaland</p>
-                </div>
+            <div class="card-body">
+                <h5 class="card-title">Learn Basic ASL Signs</h5>
+                <p class="card-text">By Maddie Jackson</p>
             </div>
         </div>
     </div>
-
+    
     <div class="col-md-4 mb-3">
         <div class="card video-card">
+            <div class="video-thumbnail">
+                <img src="pictures/colorspic.jpg" class="card-img-top" alt="Learn Colours in ASL">
+                <div class="play-button">
+                    <i class="bi bi-play-circle"></i> <!-- Play button icon -->
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Colours</h5>
+                <p class="card-text">By Rachel Greene</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card video-card">
+            <div class="video-thumbnail">
+                <img src="pictures/greetingspic.jpg" class="card-img-top" alt="Learn Greetings in ASL">
+                <div class="play-button">
+                    <i class="bi bi-play-circle"></i> <!-- Play button icon -->
+                </div>
+            </div>
             <div class="card-body">
                 <h5 class="card-title">Greetings</h5>
-                <p class="card-text">By Erling Haaland</p>
+                <p class="card-text">By Monica Geller</p>
             </div>
         </div>
     </div>
 </div>
 
-    <!-- More Videos -->
-    <h3 class="text-center text-primary">More Videos</h3>
-    <div class="row mt-3">
-        <div class="col-md-4 mb-3">
-            <div class="card video-card">
-                <div class="card-body">
-                    <h5 class="card-title">The Alphabet</h5>
-                    <p class="card-text">By Jess Trinh</p>
+<!-- More Videos Carousel -->
+<h3 class="text-left text-primary mt-4">More Videos</h3>
+<div id="moreVideosCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card video-card">
+                        <div class="video-thumbnail">
+                            <img src="pictures/alphabetpic.jpg" class="card-img-top" alt="The Alphabet">
+                            <div class="play-button">
+                                <i class="bi bi-play-circle"></i> <!-- Play button icon -->
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Alphabet</h5>
+                            <p class="card-text">By Jess Trinh</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card video-card">
-                <div class="card-body">
-                    <h5 class="card-title">Numbers 1 - 25</h5>
-                    <p class="card-text">By Gua Dong</p>
+                <div class="col-md-4 mb-3">
+                    <div class="card video-card">
+                        <div class="video-thumbnail">
+                            <img src="pictures/num120.jpg" class="card-img-top" alt="Numbers 1 - 25">
+                            <div class="play-button">
+                                <i class="bi bi-play-circle"></i> <!-- Play button icon -->
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Numbers 1 - 25</h5>
+                            <p class="card-text">By Phoebe Buffay</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card video-card">
-                <div class="card-body">
-                    <h5 class="card-title">Numbers 25 - 50</h5>
-                    <p class="card-text">By Nick Smith</p>
+                <div class="col-md-4 mb-3">
+                    <div class="card video-card">
+                        <div class="video-thumbnail">
+                            <img src="pictures/num2029.jpg" class="card-img-top" alt="Numbers 25 - 50">
+                            <div class="play-button">
+                                <i class="bi bi-play-circle"></i> <!-- Play button icon -->
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Numbers 25 - 50</h5>
+                            <p class="card-text">By Phoebe Buffay</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#moreVideosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#moreVideosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
 
 <!-- Footer -->
 <div class="footer">
-    <nav class="nav justify-content-center">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Videos</a>
-        <a class="nav-link" href="#">Quiz Me</a>
-    </nav>
     <p class="footer-text">© 2024 SignBuddy. All rights reserved.</p>
 </div>
 
